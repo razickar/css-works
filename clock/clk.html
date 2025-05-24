@@ -1,0 +1,228 @@
+<html>
+<head>
+<style>
+*{
+box-sizing:border-box;
+margin:0px;
+padding:0px;}
+.main{
+height:100vh;
+width:100vw;
+background-color:#011960;
+border:2px solid blue;
+position:relative;
+}
+.structure{
+border-radius:20px;
+height:200px;
+width:700px;
+border:1px solid gray;
+box-shadow:10px 10px 50px #8045ffd1; 
+background-color:rgba(25,25,25,0);
+backdrop-filter:blur(10px);
+position:absolute;
+top:50%;
+align-content:center;
+left:50%;
+transform:translate(-50%,-50%);
+}
+.rectanmi{
+height:200px;
+width:200px;
+
+background-color:transparent;
+position:relative;
+top:160px;
+left:300px;
+
+}
+.circleanmi{
+height:200px;
+width:200px;
+box-shadow:10px 10px 40px black;
+border-right:15px solid white;
+animation:cirle 5s 200;
+border-radius:100%;
+position:absolute;
+top:200px;
+background-color:#2205ff00;
+top:50%;
+left:65%;
+}
+@keyframes cirle{
+0%{
+	transform:rotate(0deg);
+}
+25%{
+transform:rotate(90deg);
+}
+50%{
+transform:rotate(180deg);
+}
+75%{
+transform:rotate(270deg);
+}
+100%{
+transform:rotate(360deg);
+}
+}
+.d1{
+position:absolute;
+box-shadow:10px 10px 40px black;
+height:50%;
+width:50%;
+background-color:#ff0080d1;
+border-radius:25px;
+animation: sprw 7s 100;
+
+
+}
+.d2{
+position:absolute;
+border-radius:25px;
+background-color:#2205ffcc;
+box-shadow:10px 10px 40px black;
+height:50%;
+width:50%;
+bottom:0px;
+right:0px;
+animation: sprs 7s 100;
+}
+
+@keyframes sprw{
+0%{
+	height:100%;
+	bottom:0px;
+}
+12%{
+	bottom:0px;
+	height:50%;
+}
+24%{
+	bottom:0px;
+	left:0px;
+	width:50%;
+}
+36%{
+	bottom:0px;
+	left:0px;
+	height:50%;
+	width:100%;
+}
+48%{
+	bottom:0px;
+	left:50%;
+	width:50%;
+	height:50%;
+}
+60%{
+	bottom:0%;
+	left:50%;
+	width:50%;
+	height:100%;
+}
+72%{
+	left:50%;
+	height:50%;
+	width:50%;
+}
+84%{
+	height:50%;
+	bottom:50%;
+}
+90%{
+	height:50%;
+	width:100%;
+	left:0px;
+	
+}
+100%{
+	left:0px;
+	width:50%;
+	height:50%;
+}
+
+}
+@keyframes sprs{
+0%{
+	bottom:0px;
+	left:50%;
+	width:50%;
+	height:50%;
+}
+12%{
+	bottom:0%;
+	left:50%;
+	width:50%;
+	height:100%;
+}
+24%{
+	left:50%;
+	height:50%;
+	width:50%;
+}
+36%{
+	height:50%;
+	bottom:50%;
+}
+48%{
+	height:50%;
+	width:100%;
+	left:0px;
+}
+60%{
+	left:0px;
+	width:50%;
+	height:50%;
+}
+72%{
+height:100%;
+	bottom:0px;
+}
+84%{
+	bottom:0px;
+	height:50%;
+}
+90%{
+bottom:0px;
+	left:0px;
+	width:50%;
+	
+}
+100%{
+	bottom:0px;
+	left:0px;
+	height:50%;
+	width:100%;
+}
+
+}
+h1{
+
+color:white;
+font-size:1em;
+
+}
+#time{
+font-size:6.5em;
+}
+</style>
+</head>
+<body>
+	<div class="main">
+		<div class="rectanmi">
+			<div class="d1"></div>
+			<div class="d2"></div>
+		</div>
+		<div class="circleanmi"></div>
+		<div class="structure"><center>
+			<h1 id="time">00 : 00 : 00</h1>
+			<h1><pre>HOURS                    MINUTES                 SECONDS</pre></h1>
+			</center>
+		</div>
+		
+		
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
