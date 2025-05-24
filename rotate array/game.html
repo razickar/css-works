@@ -1,0 +1,130 @@
+<html>
+<head>
+<style>
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+
+}
+.main{
+height:100vh;
+width:100vw;
+border:2px solid blue;
+background-color:black;
+display:flex;
+gap:200px;
+align-items:center;
+justify-content:center;
+Color:white;
+font-size:2em;
+}
+.con{
+border-radius:25px;
+height:300px;
+width:300px;
+border:2px solid black;
+background-color:ffffff;
+box-shadow:10px 10px 20px gray;
+align-content:center;
+
+}
+button{
+height:100px;
+width:200px;
+border-radius:10px;
+font-size:1em;
+background-color:blue;
+position:absolute;
+bottom:100px;
+left:600px;
+
+}
+h1{
+Color:black;
+
+}
+.but1{
+height:100px;
+width:150px;
+border:2px solid ;
+gap:20px;
+left:0px;
+margin-left:400px;
+border-radius:25px;
+}
+.but2{
+height:100px;
+width:150px;
+border:2px solid ;
+gap:20px;
+left:0px;
+border-radius:25px;
+margin-left:200px;
+}
+.but3{
+height:100px;
+width:150px;
+border:2px solid ;
+gap:20px;
+left:0px;
+margin-left:0px;
+border-radius:25px;
+}
+.dis{
+font-size:4em;
+color:yellow;
+position:absolute;
+left:150px;
+top:100px;
+}
+.dis2{
+font-size:4em;
+color:yellow;
+position:absolute;
+right:350px;
+top:100px;
+}
+#matchdraw{
+font-size:4em;
+color:transparent;
+
+position:absolute;
+right:350px;
+top:100px;
+}
+.score{
+height:100px;
+width:100px;
+background-color:#ffffff;
+border:2px solid cyan;
+position:absolute;
+right:420px;
+top:10px;
+border-radius:10px;
+}
+.score1{
+height:100px;
+width:100px;
+background-color:#ffffff;
+border:2px solid cyan;
+position:absolute;
+left:250px;
+top:10px;
+border-radius:10px;
+}
+
+</style>
+</head>
+<body>
+	<div class="main"><h1 id="matchdraw">MATCH DRAW...</h1><h1 id="playerone" class="dis">WIN</h1 ><h1 id="playertwo" class="dis2">WIN</h1>
+		<div class="con"><h1 id="one"></h1></div><button class="but1" onclick="user(event)">STONE</button>
+		<button onclick="user(event)" class="but2">PAPER</button>
+		<button onclick="user(event)" class="but3">SCISSOR</button>VS<div class="con"><h1 id="two"></h1></div><br>
+		<div class="score"><h1 id="p2"></h1></div>
+		<div class="score1"><h1 id="p1"></h1></div>
+		
+	</div>
+	<script src="script2.js"></script>
+</body>
+</html>

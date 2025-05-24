@@ -1,0 +1,115 @@
+*{
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+	
+}
+.backside{
+ height:100vh;
+ width:100vw;
+ background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDqtxeX5qAJqTvP_EQRlGmTVmz-wZvy4f4GA&s");
+ background-repeat:no-repeat;
+ background-size:contain;
+ backdrop-filter:blur(10px);
+ border:0px solid ;
+ border-image:fill 0 linear-gradient(#0003,#000);
+align-content:center;
+}
+.tableu{
+	border-radius:25px;
+	backdrop-filter:blur(10px);
+	box-shadow:5px -10px 40px gray;
+	height:500px;
+	width:350px;
+	border:1px solid gray;
+	align-content:center;
+	
+}
+.logo{
+		height:100px;
+		width:100px;
+		border-radius:100%;
+		border-bottom:10px solid #1ABC9C;
+		border-top:10px solid #24537e;
+		border-right:10px solid #ffffff;
+		border-left:10px solid white;
+		position:absolute;
+		top:70px;
+		left:47%;
+		background:rgba(0,0,0,0.5);
+		animation:oodu 3s 100;
+}
+@keyframes oodu{
+	0%{
+		border-bottom:5px solid #1ABC9C;
+		border-top:5px solid #24537e;
+		border-right:5px solid #ffffff;
+		border-left:5px solid white;
+	}
+	50%{
+		border-top:5px solid white;
+		border-bottom:5px solid #ffffff;
+		border-right:5px solid #24537e;
+		border-left:5px solid #1ABC9C;
+	}
+	100%{
+		border-top:5px solid #1ABC9C;
+		border-bottom:5px solid #24537e;
+		border-right:5px solid white;
+		border-left:5px solid #ffffff;
+	}
+	
+}
+label{
+	color:transparent;
+	position:absolute;
+	left:49px;
+	letter-spacing:4px;
+	transition:all 0.5s;
+	
+}
+#sub2{
+	background-color:black;
+	color:white;
+	border-radius:25px;
+	letter-spacing:2px;
+
+	margin-bottom:20px;
+	margin-top:20px;
+	height:30px;
+	width:250px;
+	outline:none;
+	background:transparent;
+	color:white;
+	border:0px solid white;
+	border-bottom:2px solid white;
+}
+	
+
+#sub2:focus{
+	
+	background-color:white;
+	color:black;
+	border:1px solid white;
+}
+input{
+	margin-bottom:20px;
+	margin-top:20px;
+	height:30px;
+	width:250px;
+	outline:none;
+	background:transparent;
+	color:white;
+	border:0px solid white;
+	border-bottom:2px solid white;
+}
+input::placeholder{
+	letter-spacing:5px;
+}
+input:focus::placeholder{
+	color:transparent;
+}
+input:focus + label{
+	color:white;
+	
+}
